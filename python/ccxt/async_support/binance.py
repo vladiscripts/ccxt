@@ -2252,7 +2252,7 @@ class binance(Exchange):
         """
         query for balance and get the amount of funds available for trading or funds locked in orders
         :param dict params: extra parameters specific to the binance api endpoint
-        :param str|None params['type']: 'future', 'delivery', 'savings', 'funding', or 'spot'
+        :param str|None params['type']: 'future', 'delivery', 'margin', 'savings', 'funding', or 'spot'
         :param str|None params['marginMode']: 'cross' or 'isolated', for margin trading, uses self.options.defaultMarginMode if not passed, defaults to None/None/None
         :param [str]|None params['symbols']: unified market symbols, only used in isolated margin mode
         :returns dict: a `balance structure <https://docs.ccxt.com/en/latest/manual.html?#balance-structure>`
